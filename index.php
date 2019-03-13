@@ -1,5 +1,4 @@
 <?php
-
 /* application-test - index.php
    Forked by Eric Amshukov */
 
@@ -11,7 +10,6 @@ $people = array(
     array('id'=>4, 'first_name'=>'Steve', 'last_name'=>'Buscemi', 'email'=>'steve.buscemi@yahoo.com'),
     array('id'=>5, 'first_name'=>'Doug', 'last_name'=>'Simons', 'email'=>'doug.simons@hotmail.com')
  );
-
 ?>
 
 <!doctype html>
@@ -37,7 +35,7 @@ $people = array(
          </header>
          <section class="row">
             <div class="col-sm-12">
-               <table class='table table-hover table-borderless fadeIn animated'>
+               <table class='table table-striped table-hover table-borderless fadeIn animated'>
                   <caption><span class="mr-2"><i class="fas fa-users"></i></span><span class="d-none d-md-inline-block"> List of people</span></caption>
                   <thead>
                      <tr>
@@ -65,7 +63,7 @@ $people = array(
          <noscript>
             <section class="row">
                <div class="col-sm-12">
-                  <div class="alert alert-warning fadeIn animated"><i class="fas fa-exclamation-triangle fa-fw"></i> Some things won't run without JavaScript, please enable it and refresh the page.</div>
+                  <div class="alert alert-warning fadeIn animated"><span class="mr-2"><i class="fas fa-exclamation-triangle fa-fw"></i></span> Some things won't run without JavaScript, please enable it and refresh the page.</div>
                </div>
             </section>
          </noscript>

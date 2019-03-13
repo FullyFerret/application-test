@@ -14,8 +14,8 @@ $(function() {
 
     /* Non-blocking Bootstrap Modal Alert */
     BootstrapModalWrapperFactory.alert({
-      title: name,
-      message: `<a class="btn btn-link" title="${name}'s email" href="mailto:${email}">${email}</email>`
+      title: `<span class="mr-2"><i class="fas fa-user"></i></span> ${name}`,
+      message: `<a class="btn btn-link" title="${name}'s email" href="mailto:${email}"><span class="mr-3"><i class="far fa-envelope"></i></span>${email}</a>`
     });
   });
 });
