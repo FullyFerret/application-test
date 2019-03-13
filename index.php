@@ -49,6 +49,7 @@ $people = array(
                      <?php foreach ($people as $person) { ?>
                         <tr>
                            <?php foreach ($person as $k => $column) { ?>
+                              <!-- Escape user data to prevent XSS -->
                               <td class="<?= $k ?>"><?= htmlspecialchars($column, ENT_QUOTES, 'UTF-8') ?></td>
                            <?php } ?>
                            <td>
